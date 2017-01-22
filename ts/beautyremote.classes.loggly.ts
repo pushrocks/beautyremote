@@ -6,30 +6,30 @@ export class Loggly {
     /**
      * the loggly client Data object 
      */
-    clientData = {
+    standardLogData = {
         domainName: 'undefined',
-        serverName: 'myServer',
-        applicationName: 'myApp',
+        serverName: 'undefined',
+        applicationName: 'undefined',
         message: 'undefined',
         messageType: 'undefined'
     }
     constructor(optionsArg: {
         token: string,
-        domainName: string,
-        appName: string,
-        serverName: string
+        domainName?: string,
+        appName?: string,
+        serverName?: string
     }) {
         this.token = optionsArg.token
-        this.clientData.domainName = optionsArg.domainName
-        this.clientData.applicationName = optionsArg.appName
-        this.clientData.serverName = optionsArg.serverName
+        this.standardLogData.domainName = optionsArg.domainName
+        this.standardLogData.applicationName = optionsArg.appName
+        this.standardLogData.serverName = optionsArg.serverName
     }
 
     log(logType: string, logMessage: string) {
-        this.clientData.messageType = logType
-        this.clientData.message = logMessage
-        console.log(this.clientData)
-        this.request('post', this.clientData)
+        this.standardLogData.messageType = logType
+        this.standardLogData.message = logMessage
+        console.log(this.standardLogData)
+        this.request('post', this.standardLogData)
     }
 
     logData(dataArg) {

@@ -3,7 +3,7 @@ export declare class Loggly {
     /**
      * the loggly client Data object
      */
-    clientData: {
+    standardLogData: {
         domainName: string;
         serverName: string;
         applicationName: string;
@@ -12,9 +12,9 @@ export declare class Loggly {
     };
     constructor(optionsArg: {
         token: string;
-        domainName: string;
-        appName: string;
-        serverName: string;
+        domainName?: string;
+        appName?: string;
+        serverName?: string;
     });
     log(logType: string, logMessage: string): void;
     logData(dataArg: any): void;

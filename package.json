@@ -18,8 +18,14 @@
   },
   "homepage": "https://gitlab.com/pushrocks/beautyremote#README",
   "dependencies": {
-    "@types/loggly": "^1.1.30",
-    "loggly": "^1.1.1",
+    "@types/request": "0.0.39",
+    "request": "^2.79.0",
+    "smartq": "^1.0.4",
     "typings-global": "^1.0.14"
+  },
+  "devDependencies": {
+    "qenv": "^1.1.3",
+    "smartchai": "^1.0.1",
+    "typings-test": "^1.0.3"
   }
 }

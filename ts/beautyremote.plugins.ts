@@ -1,7 +1,9 @@
 import 'typings-global'
 
-import * as loggly from 'loggly'
+import * as request from 'request'
+import * as q from 'smartq'
 
 export {
-    loggly
+    request,
+    q
 }

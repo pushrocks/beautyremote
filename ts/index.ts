@@ -1,12 +1,1 @@
-
-
-
-
-
-// Service implementations
-
-
-
-export let remote = {
-    loggly: loggly
-}
+export * from './beautyremote.classes.loggly'

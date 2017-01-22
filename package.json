@@ -1,6 +1,6 @@
 {
   "name": "beautyremote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a remote log handler for beautylog",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

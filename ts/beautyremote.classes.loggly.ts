@@ -28,7 +28,6 @@ export class Loggly {
     log(logType: string, logMessage: string) {
         this.standardLogData.messageType = logType
         this.standardLogData.message = logMessage
-        console.log(this.standardLogData)
         this.request('post', this.standardLogData)
     }
 

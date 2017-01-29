@@ -1,9 +1,9 @@
 import 'typings-global'
 
-import * as request from 'request'
+import * as smartrequest from 'smartrequest'
 import * as q from 'smartq'
 
 export {
-    request,
+    smartrequest,
     q
 }

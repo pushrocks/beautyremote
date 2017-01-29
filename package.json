@@ -18,9 +18,8 @@
   },
   "homepage": "https://gitlab.com/pushrocks/beautyremote#README",
   "dependencies": {
-    "@types/request": "0.0.39",
-    "request": "^2.79.0",
-    "smartq": "^1.0.4",
+    "smartq": "^1.1.0",
+    "smartrequest": "^1.0.0",
     "typings-global": "^1.0.14"
   },
   "devDependencies": {

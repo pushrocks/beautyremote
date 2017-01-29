@@ -18,5 +18,5 @@ export declare class Loggly {
     });
     log(logType: string, logMessage: string): void;
     logData(dataArg: any): void;
-    private request(methodArg, dataArg?);
+    private request(dataArg?);
 }

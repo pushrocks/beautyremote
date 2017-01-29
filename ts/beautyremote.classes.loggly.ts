@@ -49,7 +49,7 @@ export class Loggly {
         plugins.smartrequest.request(`https://logs-01.loggly.com/bulk/${this.token}/tag/bulk/`, options)
             .then((res: any) => {
                 if (res.statusCode === 200) {
-                    let responseObj = JSON.parse(res.body)
+                    let responseObj = res.body
                     done.resolve(responseObj)
                 }
             })

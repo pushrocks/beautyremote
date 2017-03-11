@@ -28,7 +28,9 @@ export class Loggly {
   log(logType: string, logMessage: string) {
     this.standardLogData.messageType = logType
     this.standardLogData.message = logMessage
-    this.request(this.standardLogData)
+    this.request(this.standardLogData).catch(err => {
+      console.log(err)
+    })
   }
 
   logData(dataArg) {
